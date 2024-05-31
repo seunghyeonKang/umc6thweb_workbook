@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2 id="number">0</h2>
+    <button id="increase">+1</button>
+    <button id="decrease">-1</button>
+
+    <script>
+      const number = document.getElementById("number");
+      const increase = document.getElementById("increase");
+      const decrease = document.getElementById("decrease");
+
+      console.log(number);
+      console.log(increase);
+      console.log(decrease);
+
+      number.textContent = "0";
+
+      increase.addEventListener("click", increaseNum);
+      decrease.addEventListener("click", decreaseNum);
+      function increaseNum() {
+        console.log("increase가 클릭됨");
+        number.textContent++;
+      }
+      function decreaseNum() {
+        console.log("decrease가 클릭됨");
+        number.textContent--;
+      }
+    </script>
+  </body>
+</html>
