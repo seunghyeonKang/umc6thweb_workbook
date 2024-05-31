@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+/* 회원가입 */
+body {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  height: 100vh;
+  background-color: #acd8e6;
+}
+
+div.signin {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 540px;
+  height: 640px;
+  background-color: #dff0f5;
+  border-radius: 12px;
+}
+
+div.signin h1 {
+  margin: 16px 0;
+  padding: 0;
+
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: #333;
+}
+
+div.signin form h4 {
+  margin: 16px 0 8px 0;
+  padding: 0;
+
+  font-size: 0.9rem;
+  font-weight: 900;
+  color: #333333c4;
+}
+div.signin form input {
+  margin: 0;
+  padding: 0 8px;
+
+  width: 270px;
+  height: 32px;
+
+  background-color: #dff0f5;
+  border: 2px solid #ffffffc4;
+  border-radius: 8px;
+}
+div.signin form p {
+  margin: 4px 0 16px 0;
+  padding: 0;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  color: #2abd2c;
+}
+div.signin form p.error {
+  color: #ff0000c4;
+}
+
+div.signin form button {
+  margin: 16px 0;
+  padding: 0 8px;
+
+  width: 270px;
+  height: 40px;
+
+  background-color: #4aafce;
+  border: 2px solid #ffffffc4;
+  border-radius: 8px;
+
+  font-size: 1rem;
+  font-weight: 900;
+  color: #ffffffc4;
+}
+
+/* 모달창 */
+div.background {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: #00000077;
+  z-index: 1;
+
+  display: none;
+}
+
+div.modal {
+  position: absolute;
+
+  top: 320px;
+  left: 50%;
+  margin: -80px 0 0 -160px;
+  padding: 0;
+
+  width: 320px;
+  height: 160px;
+
+  border-radius: 8px;
+  background-color: #fff;
+  z-index: 2;
+
+  display: none;
+}
+
+div.modal h1 {
+  margin: 24px 20px 8px 20px;
+  padding: 0;
+
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: #333;
+}
+div.modal p {
+  margin: 4px 20px 8px 20px;
+  padding: 0;
+
+  font-size: 1rem;
+  font-weight: 400;
+  color: #333;
+}
+div.modal button {
+  margin: 24px 20px 8px 220px;
+  padding: 0;
+
+  width: 80px;
+  height: 28px;
+
+  background-color: #4aafce;
+  border: none;
+  border-radius: 8px;
+
+  font-size: 0.9rem;
+  font-weight: 900;
+  color: #ffffffc4;
+}
