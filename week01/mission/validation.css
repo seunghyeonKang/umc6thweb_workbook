@@ -7,7 +7,6 @@ div {
   padding: 0;
 }
 
-/* 회원가입 */
 body {
   margin: 0;
   padding: 0;
@@ -21,6 +20,7 @@ body {
   background-color: #acd8e6;
 }
 
+/* 회원가입 */
 div.signup {
   margin: 0;
   padding: 0;
