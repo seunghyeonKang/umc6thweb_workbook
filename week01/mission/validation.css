@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+div {
+  margin: 0;
+  padding: 0;
+}
+
 /* 회원가입 */
 body {
   margin: 0;
@@ -16,7 +21,7 @@ body {
   background-color: #acd8e6;
 }
 
-div.signin {
+div.signup {
   margin: 0;
   padding: 0;
 
@@ -31,7 +36,7 @@ div.signin {
   border-radius: 12px;
 }
 
-div.signin h1 {
+div.signup h1 {
   margin: 16px 0;
   padding: 0;
 
@@ -40,7 +45,7 @@ div.signin h1 {
   color: #333;
 }
 
-div.signin form h4 {
+div.signup form h4 {
   margin: 16px 0 8px 0;
   padding: 0;
 
@@ -48,7 +53,7 @@ div.signin form h4 {
   font-weight: 900;
   color: #333333c4;
 }
-div.signin form input {
+div.signup form input {
   margin: 0;
   padding: 0 8px;
 
@@ -59,7 +64,7 @@ div.signin form input {
   border: 2px solid #ffffffc4;
   border-radius: 8px;
 }
-div.signin form p {
+div.signup form p {
   margin: 4px 0 16px 0;
   padding: 0;
 
@@ -67,12 +72,12 @@ div.signin form p {
   font-weight: 900;
   color: #2abd2c;
 }
-div.signin form p.error {
+div.signup form p.error {
   color: #ff0000c4;
 }
 
-div.signin form button {
-  margin: 16px 0;
+div.signup form button {
+  margin: 8px 0;
   padding: 0 8px;
 
   width: 270px;

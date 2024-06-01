@@ -7,34 +7,49 @@
     <link rel="stylesheet" href="./validation.css" />
   </head>
   <body>
-    <div class="signin">
+    <div class="signup">
       <h1>회원가입</h1>
 
-      <form>
-        <!-- 이름 -->
-        <h4>이름</h4>
-        <input type="text" />
-        <p>멋진 이름이네요!</p>
+      <form id="signup_form">
+        <div>
+          <!-- 이름 -->
+          <h4>이름</h4>
+          <input class="name" type="text" />
+          <p class="name"></p>
+        </div>
 
-        <!-- 이메일 -->
-        <h4>이메일</h4>
-        <input type="text" />
+        <div>
+          <!-- 이메일 -->
+          <h4>이메일</h4>
+          <input class="email" type="text" />
+          <p class="email"></p>
+        </div>
 
-        <!-- 나이 -->
-        <h4>나이</h4>
-        <input type="text" />
+        <div>
+          <!-- 나이 -->
+          <h4>나이</h4>
+          <input class="age" type="text" />
+          <p class="age"></p>
+        </div>
 
-        <!-- 비밀번호 -->
-        <h4>비밀번호</h4>
-        <input type="password" />
+        <div>
+          <!-- 비밀번호 -->
+          <h4>비밀번호</h4>
+          <input class="password" type="password" />
+          <p class="password"></p>
+        </div>
 
-        <!-- 비밀번호 확인 -->
-        <h4>비밀번호 확인</h4>
-        <input type="password" />
+        <div>
+          <!-- 비밀번호 확인 -->
+          <h4>비밀번호 확인</h4>
+          <input class="confirm_password" type="password" />
+          <p class="confirm_password"></p>
+        </div>
 
-        <!-- 제출 -->
-        <br /><br />
-        <button type="submit">가입하기</button>
+        <div>
+          <!-- 제출 -->
+          <button type="submit">가입하기</button>
+        </div>
       </form>
     </div>
 
