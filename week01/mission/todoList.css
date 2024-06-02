@@ -14,12 +14,14 @@ body {
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 
   width: 100vw;
   height: 100vh;
   background-color: #ecf0f6;
+}
+body > h1 {
+  margin: 80px 0 0 0;
 }
 
 form input {
@@ -39,7 +41,7 @@ div.wrap {
 
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 div.wrap > div {
   width: 240px;
