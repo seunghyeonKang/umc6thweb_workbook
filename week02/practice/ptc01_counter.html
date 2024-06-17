@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script type="text/babel">
+      const { useState } = React;
+
+      function ButtonCount() {
+        const [num, setNum] = useState(0);
+
+        function PlusNum() {
+          setNum(num + 1);
+          console.log("increase가 클릭됨");
+        }
+        function MinusNum() {
+          setNum(num - 1);
+          console.log("decrease가 클릭됨");
+        }
+
+        return (
+          <div>
+            <h1>{num}</h1>
+            <button onClick={PlusNum}>+1</button>
+            <button onClick={MinusNum}>-1</button>
+          </div>
+        );
+      }
+
+      // DOM에 리액트 컴포넌트 랜더링하기
+      const domContainer = document.querySelector("#root");
+      const root = ReactDOM.createRoot(domContainer);
+      root.render(<ButtonCount />);
+    </script>
+  </body>
+</html>
