@@ -15,7 +15,6 @@ todoForm.addEventListener("submit", (event) => {
 
 function addTodoItem(todoText) {
   const todoItem = createItem(todoText, "완료", handleComplete);
-  todoItem.classList.add("todo-item");
   todoList.appendChild(todoItem);
 }
 
@@ -33,7 +32,6 @@ function createItem(text, buttonText, buttonHandler) {
 function handleComplete(todoItem) {
   const todoText = todoItem.querySelector("p").innerText;
   const completedItem = createItem(todoText, "삭제", handleDelete);
-  completedItem.classList.add("completed-item");
   completedList.appendChild(completedItem);
   todoItem.remove();
 }
