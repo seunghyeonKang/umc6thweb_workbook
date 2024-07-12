@@ -26,7 +26,34 @@ form input {
   border-radius: 4px;
 }
 
-div#root > div {
+div#root > section {
+  margin: 20px 0;
+  padding: 0 10px;
+
+  width: 540px;
+
   display: flex;
   justify-content: space-around;
+}
+
+section > div {
+  margin: 20px 0;
+  padding: 0 10px;
+
+  width: 240px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* background-color: #b4c3da; */
+}
+
+h2 {
+  margin: 4px 0;
+  padding: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
 }

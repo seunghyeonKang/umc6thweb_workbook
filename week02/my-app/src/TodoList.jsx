@@ -5,10 +5,10 @@ import { List } from "./mission01/List";
 function TodoList() {
   const [content, setContent] = useState("");
   const [todos, setTodos] = useState([
-    { content: "React", isDone: false, id: 101 },
-    { content: "JavaScript", isDone: false, id: 102 },
-    { content: "html", isDone: true, id: 103 },
-    { content: "css", isDone: true, id: 104 },
+    // { content: "React", isDone: false, id: 101 },
+    // { content: "JavaScript", isDone: false, id: 102 },
+    // { content: "html", isDone: true, id: 103 },
+    // { content: "css", isDone: true, id: 104 },
   ]);
 
   const handleSubmit = (event) => {
@@ -46,41 +46,43 @@ function TodoList() {
         />
       </form>
 
-      <div>
-        <h2>해야 할 일</h2>
-        <ul>
-          {todos.map((todo) => {
-            return (
-              !todo.isDone && (
-                <List
-                  key={todo.id}
-                  content={todo.content}
-                  moveButton={"완료"}
-                  handleToggle={() => handleDone(todo.id)}
-                />
-              )
-            );
-          })}
-        </ul>
-      </div>
+      <section>
+        <div>
+          <h2>해야 할 일</h2>
+          <ul>
+            {todos.map((todo) => {
+              return (
+                !todo.isDone && (
+                  <List
+                    key={todo.id}
+                    content={todo.content}
+                    moveButton={"완료"}
+                    handleToggle={() => handleDone(todo.id)}
+                  />
+                )
+              );
+            })}
+          </ul>
+        </div>
 
-      <div>
-        <h2>해낸 일</h2>
-        <ul>
-          {todos.map((todo) => {
-            return (
-              todo.isDone && (
-                <List
-                  key={todo.id}
-                  content={todo.content}
-                  moveButton={"삭제"}
-                  handleToggle={() => handleDelete(todo.id)}
-                />
-              )
-            );
-          })}
-        </ul>
-      </div>
+        <div>
+          <h2>해낸 일</h2>
+          <ul>
+            {todos.map((todo) => {
+              return (
+                todo.isDone && (
+                  <List
+                    key={todo.id}
+                    content={todo.content}
+                    moveButton={"삭제"}
+                    handleToggle={() => handleDelete(todo.id)}
+                  />
+                )
+              );
+            })}
+          </ul>
+        </div>
+      </section>
     </>
   );
 }
